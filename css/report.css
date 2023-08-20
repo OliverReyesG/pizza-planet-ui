@@ -3,7 +3,31 @@
     --blue: rgb(54, 162, 235);
     --yellow: rgb(255, 205, 86);
     --light: rgb(255, 255, 255);
-    --dark: rgb(0, 0, 0)
+    --dark: rgb(0, 0, 0);
+    --small-text: 1em;
+    --medium-text: 1.5em;
+    --large-text: 2em;
+    --extra-large-text: 3em;
+    --text-primary-light: #fff;
+    --text-primary-dark: #000;
+    --text-secondary-dark: rgb(55, 55, 55);
+    --text-secondary-light: rgb(240, 240, 240);
+}
+
+.text-primary-light {
+    color: var(--text-primary-light);
+}
+
+.text-secondary-light {
+    color: var(--text-secondary-light);
+}
+
+.text-primary-dark {
+    color: var(--text-primary-dark);
+}
+
+.text-secondary-dark {
+    color: var(--text-secondary-dark);
 }
 
 .bg-red {
@@ -58,7 +82,7 @@ a:hover {
 }
 
 .report > h2 {
-    font-size: 3em;
+    font-size: var(--extra-large-text);
 }
 
 .section-divider {
@@ -93,11 +117,11 @@ a:hover {
 }
 
 .single-top > h4 {
-    font-size: 3em;
+    font-size: var(--extra-large-text);
 }
 
 .single-top > span {
-    font-size: 1.5em;
+    font-size: var(--medium-text);
 }
 
 .multiple-top {
@@ -117,6 +141,18 @@ a:hover {
     min-width: 350px;
     padding: 6em 3em;
     border-radius: 10px;
+}
+
+.top-box > h2 {
+    font-size: var(--medium-text);
+}
+
+.top-box > h3 {
+    font-size: var(--large-text);
+}
+
+.top-box > span {
+    font-size: var(--small-text);
 }
 
 .hoverable:hover {
