@@ -40,7 +40,7 @@ beverageForm.submit(event => {
 
     event.preventDefault();
     event.currentTarget.reset();
-    window.location.href = '/app/beverage/beverages.html';
+    window.location.href = '/app/beverage/beverage.html';
 });
 
 /**
