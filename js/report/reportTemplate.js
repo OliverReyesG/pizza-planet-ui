@@ -34,10 +34,10 @@ setTimeout(() => {
     revenueByMonthText.innerText = "Revenue: USD $" + revenueByMonthReport.topMonth.revenue
 
 
-    topCustomer1NameText.innerText = revenueByCustomerReport.labels[0]
-    topCustomer1RevenueText.innerText = "USD $" + revenueByCustomerReport.data[0]
-    topCustomer2NameText.innerText = revenueByCustomerReport.labels[1]
-    topCustomer2RevenueText.innerText = "USD $" + revenueByCustomerReport.data[1]
-    topCustomer3NameText.innerText = revenueByCustomerReport.labels[2]
-    topCustomer3RevenueText.innerText = "USD $" + revenueByCustomerReport.data[2]
+    topCustomer1NameText.innerText = revenueByCustomerReport.topCustomers[0].client_name
+    topCustomer1RevenueText.innerText = "USD $" + revenueByCustomerReport.topCustomers[0].revenue
+    topCustomer2NameText.innerText = revenueByCustomerReport.topCustomers[1].client_name
+    topCustomer2RevenueText.innerText = "USD $" + revenueByCustomerReport.topCustomers[1].revenue
+    topCustomer3NameText.innerText = revenueByCustomerReport.topCustomers[2].client_name
+    topCustomer3RevenueText.innerText = "USD $" + revenueByCustomerReport.topCustomers[2].revenue
 }, 1000)
