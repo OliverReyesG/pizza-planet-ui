@@ -1,5 +1,5 @@
 setTimeout(() => {
     ingredientChart.update();
     revenueByMonthChart.update();
-    revenueByCustomerChart.update();
-}, 1000);
+    ordersByCustomerChart.update();
+}, 100);

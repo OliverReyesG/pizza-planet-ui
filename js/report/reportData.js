@@ -10,7 +10,7 @@ const revenueByMonthReport = {
     topMonth: {}
 }
 
-const revenueByCustomerReport = {
+const ordersByCustomerReport = {
     labels: [],
     data: [],
     topCustomers: []
@@ -53,9 +53,9 @@ const set_report_data = async () => {
     revenueByMonthReport.topMonth = report_data.revenue_by_month.top_month
 
     // Revenue By Customer Report
-    report_data.revenue_by_customer.customers.map((customer) => revenueByCustomerReport.labels.push(customer.client_name))
-    report_data.revenue_by_customer.customers.map((customer) => revenueByCustomerReport.data.push(customer.revenue))
-    revenueByCustomerReport.topCustomers = report_data.revenue_by_customer.top_customers
+    report_data.orders_by_customer.customers.map((customer) => ordersByCustomerReport.labels.push(customer.client_name))
+    report_data.orders_by_customer.customers.map((customer) => ordersByCustomerReport.data.push(customer.orders))
+    ordersByCustomerReport.topCustomers = report_data.orders_by_customer.top_customers
 }
 
 set_report_data()
