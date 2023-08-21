@@ -23,8 +23,8 @@ setTimeout(() => {
     topMonth.innerText = monthsOfYear[revenueByMonthReport.topMonth.month - 1]
     topMonthRevenue.innerText = "Revenue: USD $" + revenueByMonthReport.topMonth.revenue
 
-    topCustomer.innerText = revenueByCustomerReport.topCustomers[0].client_name
-    topCustomerRevenue.innerText = "Revenue: USD $" + revenueByCustomerReport.topCustomers[0].revenue
+    topCustomer.innerText = ordersByCustomerReport.topCustomers[0].client_name
+    topCustomerRevenue.innerText = "Orders: " + ordersByCustomerReport.topCustomers[0].orders
 
 
     ingredientNameText.innerText = ingredientReport.topIngredient.ingredient_name
@@ -34,10 +34,10 @@ setTimeout(() => {
     revenueByMonthText.innerText = "Revenue: USD $" + revenueByMonthReport.topMonth.revenue
 
 
-    topCustomer1NameText.innerText = revenueByCustomerReport.topCustomers[0].client_name
-    topCustomer1RevenueText.innerText = "USD $" + revenueByCustomerReport.topCustomers[0].revenue
-    topCustomer2NameText.innerText = revenueByCustomerReport.topCustomers[1].client_name
-    topCustomer2RevenueText.innerText = "USD $" + revenueByCustomerReport.topCustomers[1].revenue
-    topCustomer3NameText.innerText = revenueByCustomerReport.topCustomers[2].client_name
-    topCustomer3RevenueText.innerText = "USD $" + revenueByCustomerReport.topCustomers[2].revenue
+    topCustomer1NameText.innerText = ordersByCustomerReport.topCustomers[0].client_name
+    topCustomer1RevenueText.innerText = "Orders: " + ordersByCustomerReport.topCustomers[0].orders
+    topCustomer2NameText.innerText = ordersByCustomerReport.topCustomers[1].client_name
+    topCustomer2RevenueText.innerText = "Orders: " + ordersByCustomerReport.topCustomers[1].orders
+    topCustomer3NameText.innerText = ordersByCustomerReport.topCustomers[2].client_name
+    topCustomer3RevenueText.innerText = "Orders: " + ordersByCustomerReport.topCustomers[2].orders
 }, 1000)

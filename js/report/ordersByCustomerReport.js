@@ -1,13 +1,13 @@
-const revenueByCustomerContext = document.getElementById(
+const ordersByCustomerContext = document.getElementById(
     "revenue-by-customer-chart"
 );
 
-const revenueByCustomerData = {
-    labels: revenueByCustomerReport.labels,
+const ordersByCustomerData = {
+    labels: ordersByCustomerReport.labels,
     datasets: [
         {
             label: "Customer revenue",
-            data: revenueByCustomerReport.data,
+            data: ordersByCustomerReport.data,
             fill: true,
             backgroundColor: [
                 "rgb(255, 99, 132)",
@@ -19,12 +19,12 @@ const revenueByCustomerData = {
     ],
 };
 
-const revenueByCustomerConfig = {
+const ordersByCustomerConfig = {
     type: "bar",
-    data: revenueByCustomerData,
+    data: ordersByCustomerData,
 };
 
-const revenueByCustomerChart = new Chart(
-    revenueByCustomerContext,
-    revenueByCustomerConfig
+const ordersByCustomerChart = new Chart(
+    ordersByCustomerContext,
+    ordersByCustomerConfig
 );
